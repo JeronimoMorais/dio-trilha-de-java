@@ -4,5 +4,7 @@ public class TiposVariaveis {
         int numerNormal = numeroCurto;
         //short numeroCurto2 = numerNormal; não é permitido este formato porque o tipo INT é maior do que o SHORT
         short numeroCurto2 = (short) numerNormal; //ao fazer um CASTING a expressão fica correta.
+
+        final double PI = 3.14; // valor INVARIÁVEL
     }
 }
