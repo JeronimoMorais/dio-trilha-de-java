@@ -17,7 +17,7 @@ public class SistemaDeMedida {
                 break;
         
             default:
-                System.out.println("Você não definiu um tamanho!");
+                System.out.println("Você não definiu um tamanho específico!");
                 break;
         }
     }
