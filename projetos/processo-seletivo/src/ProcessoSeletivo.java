@@ -2,11 +2,30 @@ import java.util.concurrent.ThreadLocalRandom;
 
 public class ProcessoSeletivo {
     public static void main(String[] args) throws Exception {
+        
         // analisarCandidatura(1500.0);
         // analisarCandidatura(2000.0);
         // analisarCandidatura(2200.0);
 
-        selecaoCandidatos();
+        // selecaoCandidatos();
+
+        imprimirCandidatosSelecionados();
+    }
+
+    static void imprimirCandidatosSelecionados(){
+        String[] candidatoSelecionados = {"JERONIMO", "IZABEL", "ADRIANO", "RAFAEL", "PAOLA"};
+
+        System.out.println("Imprimindo a lista de candidatos pelo íncide do elemento.");
+
+        for(int indice = 0; indice < candidatoSelecionados.length; indice++){
+            System.out.println("O candidato de nº " + (indice+1) + " é o candidato " + candidatoSelecionados[indice] + " selecioinado.");
+        }
+
+        System.err.println("\nImprimindo a lista de nomes dos candidatos selecionados.");
+
+        for (String candidato : candidatoSelecionados) {
+            System.out.println("O candidato " + candidato + " foi selcionado.");
+        }
     }
 
     static void selecaoCandidatos(){
